@@ -1,0 +1,118 @@
+@import "../css/google-fonts/fonts.css";
+*{font-family: 'Ubuntu', sans-serif;}
+html {
+  position: relative;
+  min-height: 100%;
+}
+main {
+	margin-bottom: 237px;
+}
+.m-main {
+		margin-bottom: 100px  !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+/* Video */
+.videobackground {
+  position: relative;
+  background-color: black;
+  height: 82.6vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videobackground video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.videobackground .container {
+  position: relative;
+  z-index: 2;
+}
+
+.videobackground .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .videobackground {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  .videobackground video {
+    display: none;
+  }
+}
+/* Pagament */
+.nav-pills .nav-link {
+  color: #555;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+}
+/* -------- */
+/* Sticky nav */
+.sticky {
+    z-index: 50 !important;
+}
+.sticky-nav {
+    z-index: 30 !important;
+}
+/* -------- */
+::selection {
+  background: #c0c0c0;
+}
+/* -------- */
+.storyborder {
+	border: solid;
+	border-color: #7bbaff;
+	border-width: 3px;
+}
+.storyborder-seen {
+	border: solid;
+	border-color: #a0a7ad;
+	border-width: 3px;
+}
+.nostoryborder {
+	border: solid;
+	border-color: #e4e7e9;
+	border-width: 3px;
+}
+.userstory {
+	display: inline-block;
+	width: 80px;
+}
+.userstory img {
+	margin-left: 20px;
+}
+
+.storyrow {
+	height: 84px;
+	white-space: nowrap;
+}
+/*----------*/
