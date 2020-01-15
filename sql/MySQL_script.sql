@@ -3,7 +3,7 @@ use activitatmvc;
 
 CREATE TABLE if not exists perfil (
 id int(10) UNSIGNED not null AUTO_INCREMENT,
-userName varchar(20) not null unique,
+userName varchar(20) not null,
 nom varchar(50) not null,
 llinatge1 varchar(50) not null,
 llinatge2 varchar(50),
